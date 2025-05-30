@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIHI – Přírodní kosmetika s možností výdělku z domova</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.mihi-cz.eu/" />
+    <link rel="stylesheet" href="dist/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <link rel="mask-icon" href="/images/favicon.ico" color="#df6b88" />
+
+    <meta name="msapplication-TileColor" content="#df6b88" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <meta
+      name="description"
+      content="Objevte MIHI – ekologickou kosmetiku s možností výdělku z domova. Přidejte se k nám a spojte krásu s podnikáním."
+    />
+    <!-- Open Graph (Facebook, Messenger, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="MIHI – Přírodní kosmetika & výdělek z domova"
+    />
+    <meta
+      property="og:description"
+      content="Objevte MIHI – ekologickou kosmetiku s možností výdělku z domova. Přidejte se k nám a spojte krásu s podnikáním."
+    />
+    <meta
+      property="og:image"
+      content="https://mihi.care/templates/mihi/img/logo.svg?v=1"
+    />
+    <meta property="og:url" content="https://www.mihi-cz.eu/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter (X) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="MIHI – Přírodní kosmetika & výdělek z domova"
+    />
+    <meta
+      name="twitter:description"
+      content="Přidejte se k MIHI – přírodní kosmetice s výdělkem z pohodlí domova."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mihi.care/templates/mihi/img/logo.svg?v=1"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind konfigurace (volitelné barvy, fonty) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#df6b88',
+              secondary: '#f7f3f0',
+            },
+            fontFamily: {
+              sans: ['"Open Sans"', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- HERO SEKCE -->
+    <header
+      class="p-4 sm:px-8 md:px-12 flex items-center justify-between shadow-md"
+    >
+      <img
+        src="/images/mihi_logo.svg"
+        alt="MIHI logo"
+        class="h-12 sm:h-16 md:h-20 lg:h-24"
+      />
+
+      <!-- DESKTOP MENU -->
+      <nav class="hidden md:flex gap-10 font-grandis lg:text-2xl">
+        <a href="#registrace" class="text-primary hover:underline font-grandis"
+          >Registrace</a
+        >
+        <a href="#Omne" class="text-primary hover:underline font-grandis"
+          >O mně</a
+        >
+        <a href="#Kontakt" class="text-primary hover:underline font-grandis"
+          >Kontakt</a
+        >
+        <a href="#Omihi" class="text-primary hover:underline font-grandis"
+          >O Mihi</a
+        >
+      </nav>
+
+      <!-- HAMBURGER BUTTON (only on mobile) -->
+      <button
+        id="hamburger"
+        class="block text-primary focus:outline-none md:hidden"
+        aria-label="Menu"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <!-- MOBILE MENU (only on small screens) -->
+    <nav
+      id="mobile-menu"
+      class="hidden flex flex-col bg-secondary px-6 py-4 md:hidden text-2xl"
+    >
+      <a href="#registrace" class="py-2 text-primary font-medium font-grandis"
+        >Registrace</a
+      >
+      <a href="#Omne" class="py-2 text-primary font-medium font-grandis"
+        >O mně</a
+      >
+      <a href="#Kontakt" class="py-2 text-primary font-medium font-grandis"
+        >Kontakt</a
+      >
+      <a href="#Omihi" class="py-2 text-primary font-medium font-grandis"
+        >O Mihi</a
+      >
+    </nav>
+
+    <main class="px-6 sm:px-8 md:px-12 mt-10 text-center">
+      <h1
+        class="text-2xl sm:text-3xl md:text-6xl font-bold leading-snug text-primary font-grandis"
+      >
+        Ekologická kosmetika a drogerie <br />
+        dostupná každému
+      </h1>
+      <p class="mt-4 text-base text-gray-600 font-grandis lg:text-[18px]">
+        Objevte MIHI – místo, kde se snoubí kvalitní přírodní kosmetika a
+        ekologická drogerie za dostupné ceny.<br />
+        Dopřejte si péči, která skutečně funguje.
+      </p>
+
+      <div class="mt-6 flex flex-col gap-4">
+        <a
+          href="#katalog"
+          class="bg-purple-800 text-white py-3 px-6 rounded-lg shadow hover:bg-pink-600 transition font-grandis lg:w-[250px] mx-auto"
+        >
+          Prohlédnout katalog
+        </a>
+      </div>
+      <section class="mt-11 px-6 sm:px-8 md:px-12 text-center">
+        <h2
+          class="text-xl sm:text-3xl font-bold text-primary font-grandis mb-6 underline"
+        >
+          Proč MIHI?
+        </h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- CARD 1 -->
+          <div
+            class="bg-pink-100 p-6 rounded-2xl shadow-lg flex flex-col justify-between h-full min-h-[320px]"
+          >
+            <div>
+              <h3 class="text-lg font-semibold text-primary font-grandis mb-2">
+                Ekologická kvalita
+              </h3>
+              <p class="text-sm text-gray-700 font-grandis">
+                Produkty MIHI jsou šetrné k přírodě i k vaší pokožce.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-col gap-4">
+              <a
+                href="#katalog"
+                class="bg-[#a2d2ff] text-gray-800 py-3 px-6 rounded-lg shadow hover:brightness-110 transition font-grandis lg:w-[250px] mx-auto"
+              >
+                Prohlédnout katalog
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="bg-pink-100 p-6 rounded-2xl shadow-lg flex flex-col justify-between h-full min-h-[320px]"
+          >
+            <div>
+              <h3 class="text-lg font-semibold text-primary font-grandis mb-2">
+                Výdělek z domova
+              </h3>
+              <p class="text-sm text-gray-700 font-grandis">
+                Zapojte se do prodeje a vydělávejte ve volném čase. Můžete se
+                zapojit kdykoliv.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-col gap-4">
+              <a
+                href="#katalog"
+                class="bg-[#a2d2ff] text-gray-800 py-3 px-6 rounded-lg shadow hover:brightness-110 transition font-grandis lg:w-[250px] mx-auto"
+              >
+                Prohlédnout katalog
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="bg-pink-100 p-6 rounded-2xl shadow-lg flex flex-col justify-between h-full min-h-[320px]"
+          >
+            <div>
+              <h3 class="text-lg font-semibold text-primary font-grandis mb-2">
+                Podpora komunity
+              </h3>
+              <p class="text-sm text-gray-700 font-grandis">
+                Stanete se součástí přátelské komunity s cílem růst. Nezáleží,
+                odkud jste.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-col gap-4">
+              <a
+                href="#katalog"
+                class="bg-[#a2d2ff] text-gray-800 py-3 px-6 rounded-lg shadow hover:brightness-110 transition font-grandis lg:w-[250px] mx-auto"
+              >
+                Prohlédnout katalog
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Hamburger skript -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('hamburger');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>
