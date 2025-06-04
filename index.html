@@ -12,9 +12,11 @@
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-
-      gtag('config', 'G-053V621HR5');
+      gtag('config', 'G-053V621HR5', {
+        page_path: window.location.pathname,
+      });
     </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MIHI – Přírodní kosmetika s možností výdělku z domova</title>
